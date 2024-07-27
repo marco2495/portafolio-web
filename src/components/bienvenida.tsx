@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { JSX, SVGProps } from "react";
 
 export function Bienvenida() {
   return (
@@ -15,7 +16,7 @@ export function Bienvenida() {
             prefetch={false}
           >
             <BoltIcon className="h-8 w-8" />
-            Marco Miranda
+            Marco Miranda Miranda
           </Link>
           <nav className="hidden space-x-4 md:flex">
             <Link href="#" className="text-sm font-medium transition-colors hover:text-primary" prefetch={false}>
@@ -60,7 +61,7 @@ export function Bienvenida() {
                 </p>
               </div>
               <div className="flex items-center justify-center">
-                <img src="/perfil.jpeg" width={400} height={400} alt="About" className="rounded-lg object-cover" />
+                <img src="./perfil.jpeg" width={400} height={400} alt="About" className="rounded-lg object-cover" />
               </div>
             </div>
           </div>
@@ -107,7 +108,7 @@ export function Bienvenida() {
                 </CardHeader>
                 <CardContent>
                   <img
-                    src="/image1.jpeg"
+                    src="./image1.jpeg"
                     width={400}
                     height={300}
                     alt="Project 1"
@@ -133,7 +134,7 @@ export function Bienvenida() {
                 </CardHeader>
                 <CardContent>
                   <img
-                    src="/image2.jpg"
+                    src="./image2.jpg"
                     width={400}
                     height={300}
                     alt="Project 2"
@@ -159,7 +160,7 @@ export function Bienvenida() {
                 </CardHeader>
                 <CardContent>
                   <img
-                    src="/image4.jpeg"
+                    src="./image4.jpeg"
                     width={400}
                     height={300}
                     alt="Project 3"
@@ -185,7 +186,7 @@ export function Bienvenida() {
                 </CardHeader>
                 <CardContent>
                   <img
-                    src="/image3.jpeg"
+                    src="./image3.jpeg"
                     width={400}
                     height={300}
                     alt="Project 3"
@@ -275,7 +276,7 @@ export function Bienvenida() {
   )
 }
 
-function BoltIcon(props) {
+function BoltIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -296,7 +297,7 @@ function BoltIcon(props) {
 }
 
 
-function CodepenIcon(props) {
+function CodepenIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -320,7 +321,7 @@ function CodepenIcon(props) {
 }
 
 
-function FastForwardIcon(props) {
+function FastForwardIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -341,7 +342,7 @@ function FastForwardIcon(props) {
 }
 
 
-function GitGraphIcon(props) {
+function GitGraphIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -366,7 +367,7 @@ function GitGraphIcon(props) {
 }
 
 
-function GitlabIcon(props) {
+function GitlabIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -386,7 +387,7 @@ function GitlabIcon(props) {
 }
 
 
-function LinkedinIcon(props) {
+function LinkedinIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -408,7 +409,7 @@ function LinkedinIcon(props) {
 }
 
 
-function MailIcon(props) {
+function MailIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -429,7 +430,7 @@ function MailIcon(props) {
 }
 
 
-function MenuIcon(props) {
+function MenuIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -451,7 +452,7 @@ function MenuIcon(props) {
 }
 
 
-function NetworkIcon(props) {
+function NetworkIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -475,7 +476,7 @@ function NetworkIcon(props) {
 }
 
 
-function PhoneIcon(props) {
+function PhoneIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -495,7 +496,7 @@ function PhoneIcon(props) {
 }
 
 
-function TypeIcon(props) {
+function TypeIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -517,7 +518,7 @@ function TypeIcon(props) {
 }
 
 
-function WindIcon(props) {
+function WindIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -539,7 +540,7 @@ function WindIcon(props) {
 }
 
 
-function XIcon(props) {
+function XIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}

@@ -4,6 +4,7 @@ import { Bricolage_Grotesque } from 'next/font/google'
 import { Space_Mono } from 'next/font/google'
 import { cn } from '@/lib/utils'
 import './globals.css'
+import { ReactNode } from 'react'
 
 const fontHeading = Bricolage_Grotesque({
   subsets: ['latin'],
@@ -12,13 +13,17 @@ const fontHeading = Bricolage_Grotesque({
 })
 
 const fontBody = Space_Mono({
-  weight:"700",
+  weight: "700",
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-body',
 })
 
-export default function Layout({ children }) {
+type LayoutProps = {
+  children: ReactNode;
+}
+
+export default function Layout({ children }: LayoutProps) {
   return (
     <html lang="en">
       <body
