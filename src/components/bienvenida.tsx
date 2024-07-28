@@ -8,7 +8,7 @@ import { JSX, SVGProps } from "react";
 export function Bienvenida() {
   return (
     <div className="flex min-h-[100dvh] flex-col">
-      <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-md">
+      <header className="sticky top-0 z-50 w-full bg-background/70 backdrop-blur-md">
         <div className="container flex h-16 items-center justify-between px-4 md:px-6">
           <Link
             href="#"
@@ -16,7 +16,7 @@ export function Bienvenida() {
             prefetch={false}
           >
             <BoltIcon className="h-8 w-8" />
-            Marco Miranda Miranda
+            Marco Miranda
           </Link>
           <nav className="hidden space-x-4 md:flex">
             <Link href="#" className="text-sm font-medium transition-colors hover:text-primary" prefetch={false}>
@@ -37,10 +37,7 @@ export function Bienvenida() {
         </div>
       </header>
       <main className="flex-1">
-        <section
-          id="hero"
-          className=" from-primary to-primary-foreground py-24 text-center text-primary-foreground"
-        >
+        <section id="hero" className=" from-primary to-primary-foreground py-24 text-center text-primary-foreground">
           <div className="container">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Bienvenido a mí portafolio</h1>
             <p className="mt-4 text-lg md:text-xl">¡Descubre mis proyectos!</p>
@@ -50,14 +47,14 @@ export function Bienvenida() {
           <div className="container">
             <div className="grid gap-8 md:grid-cols-2">
               <div>
-                <h2 className="text-3xl font-bold tracking-tighter">Acerca de mí</h2>
-                <p className="mt-4 text-muted-foreground">
+                <h2 className="text-4xl font-bold tracking-tighter sm: text-center md:">Acerca de mí</h2>
+                <p className="text-2xl mt-4 text-muted-foreground sm: text-justify">
                   ¡Hola! Soy Marco, un desarrollador web que disfruta dando vida a nuevas ideas.
                   Te invito a explorar mi portafolio y descubrir cómo puedo convertir tus conceptos en soluciones digitales tangibles.
-                  ¡Espero que disfrutes tu visita!
                 </p>
-                <p className="mt-4 text-muted-foreground">
+                <p className="text-2xl mt-4 text-muted-foreground sm: text-justify">
                   En mi tiempo libre, me gusta experimentar con nuevas tecnologías, estar al día con las últimas tendencias del sector.
+                  ¡Espero que disfrutes tu visita!
                 </p>
               </div>
               <div className="flex items-center justify-center">
@@ -66,9 +63,9 @@ export function Bienvenida() {
             </div>
           </div>
         </section>
-        <section id="skills" className="bg-background py-16">
+        <section id="skills" className="py-16">
           <div className="container">
-            <h2 className="text-3xl font-bold tracking-tighter">Mis Habilidades</h2>
+            <h2 className="pl-12 text-3xl font-bold tracking-tighter">Mis Habilidades</h2>
             <div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
               <div className="flex flex-col items-center gap-2">
                 <CodepenIcon className="h-12 w-12 text-primary" />
@@ -99,8 +96,8 @@ export function Bienvenida() {
         </section>
         <section id="projects" className="bg-muted py-16">
           <div className="container">
-            <h2 className="text-3xl font-bold tracking-tighter">Mis projectos</h2>
-            <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <h2 className="text-3xl font-bold tracking-tighter sm: text-center">Mis projectos</h2>
+            <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 text-center lg:grid-cols-3">
               <Card>
                 <CardHeader>
                   <CardTitle>E-commerce básico</CardTitle>
@@ -216,24 +213,22 @@ export function Bienvenida() {
                 </p>
                 <div className="mt-4 flex flex-col gap-4">
                   <div className="flex items-center gap-2">
-                    <MailIcon className="h-6 w-6 text-primary" />
-                    <span>marco_</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <PhoneIcon className="h-6 w-6 text-primary" />
-                    <span>N/A</span>
-                  </div>
-                  <div className="flex items-center gap-2">
                     <LinkedinIcon className="h-6 w-6 text-primary" />
-                    <Link href="www.linkedin.com/in/marco845062237" target="_blank" className="underline underline-offset-2" prefetch={false}>
-                      LinkedIn
-                    </Link>
+                    <a
+                      href="https://www.linkedin.com/in/marco845062237"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className="underline underline-offset-2"
+                    >LinkedIn</a>
                   </div>
                   <div className="flex items-center gap-2">
                     <GitlabIcon className="h-6 w-6 text-primary" />
-                    <Link href="#" className="underline underline-offset-2" prefetch={false}>
-                      GitHub
-                    </Link>
+                    <a
+                      href="https://github.com/marco2495"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className="underline underline-offset-2"
+                    >GitHub</a>
                   </div>
                 </div>
               </div>
@@ -253,14 +248,14 @@ export function Bienvenida() {
       </main>
       <footer className="bg-primary py-6 text-primary-foreground">
         <div className="container flex items-center justify-between">
-          <p className="text-sm">&copy; 2024 Marco Antonio. Todos los derechoos reservados.</p>
+          <p className="text-sm">&copy; 2024 Marco Antonio. Todos los derechos reservados.</p>
           <nav className="hidden space-x-4 md:flex">
             <Link
               href="#"
               className="text-sm font-medium transition-colors hover:text-primary-foreground/80"
               prefetch={false}
             >
-              Politica de Privaciadad
+              Política de Privacidad
             </Link>
             <Link
               href="#"
