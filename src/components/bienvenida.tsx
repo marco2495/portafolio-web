@@ -1,8 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
 import { JSX, SVGProps } from "react";
 
 export function Bienvenida() {
@@ -212,6 +210,15 @@ export function Bienvenida() {
                   No dudes en contactarme si tienes alguna pregunta o propuesta de colaboración.
                 </p>
                 <div className="mt-4 flex flex-col gap-4">
+                <div className="flex items-center gap-2">
+                    <MailIcon className="h-6 w-6 text-primary" />
+                    <a
+                      href="mailto:marco_contacto@proton.me"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className="underline underline-offset-2"
+                    >Correo/Email</a>
+                  </div>
                   <div className="flex items-center gap-2">
                     <LinkedinIcon className="h-6 w-6 text-primary" />
                     <a
@@ -231,16 +238,6 @@ export function Bienvenida() {
                     >GitHub</a>
                   </div>
                 </div>
-              </div>
-              <div>
-                <form className="grid gap-4">
-                  <Input type="text" placeholder="Name" className="w-full" />
-                  <Input type="email" placeholder="Email" className="w-full" />
-                  <Textarea placeholder="Message" className="w-full" />
-                  <Button type="submit" className="justify-self-end">
-                    Send Message
-                  </Button>
-                </form>
               </div>
             </div>
           </div>
